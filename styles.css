@@ -6,14 +6,14 @@
     position: fixed;
     left: 0;
     top: 0;
-    transform: translate3d(-90px, 0, 0); 
+    will-change: transform;
+    transform: translateX(-98%); 
     transition: transform 0.2s;
     overflow-x: hidden;
 }
 .swipeout:hover {
-    transform: translate3d(0, 0, 0); ;
+    transform: translateX(0); 
     box-shadow: 10px 10px 31px -21px rgba(0,0,0,0.75);
-
 }
 .tile-container {
     display: flex;
